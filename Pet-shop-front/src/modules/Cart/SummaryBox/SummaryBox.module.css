@@ -1,0 +1,38 @@
+.container {
+width: 528px;
+background-color: #f5f6f7;
+padding: 32px;
+border-radius: 12px;
+}
+
+.heading {
+margin-bottom: 24px;
+font-size: 40px;
+font-weight: 700;
+color: var(--text-primary);
+}
+
+.info {
+margin: 4px 0 16px;
+font-size: 40px;
+color: #888888;
+}
+
+.totalBlock {
+display: flex;
+justify-content: space-between;
+align-items: baseline;
+margin-bottom: 40px;
+}
+
+.label {
+font-size: 40px;
+color: #888888;
+margin-right: 8px;
+}
+
+.value {
+font-size: 64px;
+font-weight: 700;
+color: #000;
+}

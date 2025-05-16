@@ -1,0 +1,91 @@
+.header {
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 24px 22px;
+    border-bottom: 1px solid #DDDDDD;
+    box-sizing: border-box;
+}
+
+/* Десктопный хедер */
+.desktopHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Логотип слева */
+.logoLeft {
+    display: flex;
+    justify-content: flex-start;
+}
+
+/* Мобильный хедер */
+.mobileHeader {
+    display: none;
+}
+
+.logoCenter {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.burger {
+    display: none;
+}
+
+.mobileMenu {
+    display: none;
+}
+
+/* Адаптив */
+@media (max-width: 780px) {
+    .desktopHeader {
+    display: none;
+    }
+
+    .mobileHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    }
+
+    .burger {
+    display: block;
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    }
+
+    .mobileMenu {
+    display: block;
+    width: 100%;
+    background-color: var(--input-placeholder);
+    padding: 16px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+}
+
+
+@media (max-width: 1000px) and (min-width: 780px) {
+    .header {
+        padding: 24px 22px;
+    }
+
+    .desktopHeader {
+        gap: 20px;
+    }
+
+    .desktopHeader,
+    .desktopHeader * {
+        font-size: 22px;
+    }
+
+    .cart {
+        font-size: 14px;
+    }
+}
+
+

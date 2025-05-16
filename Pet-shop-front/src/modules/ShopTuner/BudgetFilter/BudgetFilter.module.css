@@ -1,0 +1,35 @@
+.container {
+display: flex;
+flex-wrap: wrap;
+align-items: center;
+gap: 16px;
+}
+
+.caption {
+font-size: 20px;
+font-weight: 600;
+margin-right: 16px;
+color: #111827;
+}
+
+.input {
+width: 112px;
+padding: 8px 16px;
+border: 1px solid #DDDDDD;
+outline: none;
+border-radius: 6px;
+font-size: 16px;
+font-family: 'Montserrat';
+font-weight: 500;
+margin-bottom: 5px;
+}
+
+.input::placeholder {
+color: #000000B2;
+}
+
+.error {
+width: 100%;
+color: red;
+font-size: 16px;
+}

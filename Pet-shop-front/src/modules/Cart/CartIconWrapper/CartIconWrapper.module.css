@@ -1,0 +1,25 @@
+.cart {
+    position: relative;
+    display: inline-block;
+}
+
+.discountTag {
+    position: absolute;
+    top: 6px;
+    left: -6px;
+    background-color: var(--bg-primary);
+    color: var(--input-placeholder);
+    font-size: 8px;
+    font-weight: 600;
+    border-radius: 50%;
+    height: 18px;
+    min-width: 18px;
+    padding: 0 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+    box-shadow: 0 0 0 2px var(--input-placeholder);
+}
+
+

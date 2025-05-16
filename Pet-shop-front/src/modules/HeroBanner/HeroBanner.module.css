@@ -1,0 +1,58 @@
+.banner {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto 40px;
+    padding: 0 20px;
+    position: relative;
+    overflow: hidden;
+    min-height: clamp(400px, 52vh, 800px);
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    border-radius: 0 0 14px 14px;
+}
+
+.banner::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+        url(../../assets/images/main_baner.jpg);
+    background-size: cover;
+    background-position: center;
+    transform: scaleX(-1);
+    z-index: -1;
+}
+
+.content {
+    max-width: 800px;
+    padding-left: 40px;
+    z-index: 1;
+}
+
+.headline {
+    font-size: clamp(2.4rem, 5vw, 4.5rem);
+    /* минимум 38px, максимум 72px, адаптивно от ширины экрана */
+    line-height: 1.2;
+    font-weight: 700;
+    color: var(--input-placeholder);
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.PrimaryButtonWrapper {
+    margin-top: 20px;
+    z-index: 1;
+}
+
+/* Адаптация */
+@media (max-width: 480px) {
+    .content {
+        padding-left: 10px;
+    }
+
+    .headline {
+        font-size: clamp(1.8rem, 6vw, 3rem);
+        text-align: left;
+    }
+}

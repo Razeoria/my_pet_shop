@@ -1,0 +1,12 @@
+.container {
+  display: flex;
+  justify-content: center;
+  padding: 24px;
+}
+
+.image {
+  width: 100%;
+  max-width: 620px;
+  object-fit: contain;
+  border-radius: 10px;
+}

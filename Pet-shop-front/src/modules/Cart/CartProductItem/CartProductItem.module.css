@@ -1,0 +1,45 @@
+.itemCard {
+display: flex;
+align-items: center;
+width: 780px;
+border: 1px solid var(--bread-gray);
+border-radius: 12px;
+background-color: var(--input-placeholder);
+padding-right: 32px;
+margin-bottom: 16px;
+}
+
+.productImage {
+width: 200px;
+height: 180px;
+object-fit: cover;
+border-radius: 12px;
+margin-right: 32px;
+}
+
+.itemInfo {
+width: 516px;
+display: flex;
+justify-content: space-between;
+margin-bottom: 32px;
+}
+
+.itemTitle {
+font-size: 20px;
+font-weight: 500;
+}
+
+.itemPrice {
+font-size: 40px;
+font-weight: 600;
+display: flex;
+align-items: center;
+gap: 16px;
+}
+
+.itemOldPrice {
+font-size: 20px;
+font-weight: 500;
+color: #6b7280;
+text-decoration: line-through;
+}

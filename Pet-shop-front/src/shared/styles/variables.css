@@ -1,0 +1,12 @@
+:root {
+--text-primary: #282828;
+--text-muted: #8B8B8B;
+--bg-primary: #0D50FF;
+--bg-secondary: #282828;
+--gray-light: #F1F3F4;
+--input-placeholder: #FFFFFF;
+--err-red: #ff0000;
+--bread-gray: #e5e7eb;
+}
+
+/* var(--bread-gray) */

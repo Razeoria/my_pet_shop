@@ -1,0 +1,42 @@
+.container {
+display: inline-flex;
+align-items: center;
+cursor: pointer;
+user-select: none;
+position: relative;
+margin-right: 40px;
+}
+
+.label {
+font-size: 20px;
+font-weight: 600;
+margin-right: 16px;
+color: #111827;
+}
+
+.input {
+position: absolute;
+opacity: 0;
+}
+
+.visualBox {
+width: 36px;
+height: 36px;
+border: 1px solid #D1D5DB;
+border-radius: 6px;
+background-color: var(--input-placeholder);
+display: flex;
+align-items: center;
+justify-content: center;
+transition: background-color 0.2s, border-color 0.2s;
+}
+
+.input:checked + .visualBox {
+background-color: #3B82F6;
+border-color: #3B82F6;
+z-index: 1;
+}
+
+.tick {
+z-index: 5;
+}
